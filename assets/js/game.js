@@ -12,17 +12,17 @@ var enemyAttack = 12;
 console.log(enemyNames);
 console.log(enemyNames.length);
 console.log(enemyNames[0]);
-console.log(enemyNames[1]);
-console.log(enemyNames[2]);
+console.log(enemyNames[3]);
 
 
 
 var fight = function (enemyName) {
     // repeat and execute as long as the enemy-robot is alive 
     while (enemyHealth > 0) {
-        // place fight function code block here . . .
+        fight(enemyNames[i]);
     }
 }
+
 
 
 
