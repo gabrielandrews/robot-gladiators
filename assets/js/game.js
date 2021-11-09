@@ -17,7 +17,11 @@ console.log(enemyNames[2]);
 
 
 
-var fight = function (enemyName) { //hey 
+var fight = function (enemyName) {
+    // repeat and execute as long as the enemy-robot is alive 
+    while (enemyHealth > 0) {
+        // place fight function code block here . . .
+    }
 }
 
 
@@ -27,9 +31,6 @@ for (var i = 0; i < enemyNames.length; i++) {
     console.log(i);
     console.log(enemyNames[i] + " is at " + i + " index");
 }
-
-// Alert players that they are starting the round
-window.alert("Welc0me to R0b0t Gladiat0rs!")
 
 var promptFight = window.prompt("Would you like to FIGHT or SKIP this battle? Enter 'FIGHT' or 'SKIP' to choose.");
 
@@ -94,5 +95,7 @@ if (promptFight === "fight" || promptFight === "FIGHT") {
 // run fight function to start game
 
 for (var i = 0; i < enemyNames.length; i++) {
+    debugger;
+    // call fight function with enemy-robot
     fight(enemyNames[i]);
 }
